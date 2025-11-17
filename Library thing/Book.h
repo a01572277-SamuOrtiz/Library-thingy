@@ -6,11 +6,10 @@
 
 using namespace std;
 
-class Book {
+class Book
+{
 private:
-    string title;
-    string author;
-    string isbn;
+    string title, author, isbn;
     int publicationYear;
 
 public:

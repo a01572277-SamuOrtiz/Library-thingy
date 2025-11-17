@@ -4,7 +4,8 @@
 
 using namespace std;
 
-int main() {
+int main()
+{
     Library library;
 
     library.addBook(Book("Clean Code", "Robert C. Martin", "1111", 2008));
@@ -15,7 +16,8 @@ int main() {
     library.addMember(Member("Bob", "M02", 5));
 
     int option;
-    do {
+    do
+    {
         cout << "===== Library Menu =====" << endl;
         cout << "1. List books" << endl;
         cout << "2. List members" << endl;
@@ -27,19 +29,24 @@ int main() {
         cout << "Select option: ";
         cin >> option;
 
-        if (option == 1) {
+        if (option == 1)
+        {
             library.listBooks();
         }
-        else if (option == 2) {
+        else if (option == 2)
+        {
             library.listMembers();
         }
-        else if (option == 3) {
+        else if (option == 3)
+        {
             library.listLoans(false);
         }
-        else if (option == 4) {
+        else if (option == 4)
+        {
             library.listLoans(true);
         }
-        else if (option == 5) {
+        else if (option == 5)
+        {
             string memberId, isbn, date;
             cout << "Member ID: ";
             cin >> memberId;
@@ -50,7 +57,8 @@ int main() {
             library.borrowBook(memberId, isbn, date);
             cout << endl;
         }
-        else if (option == 6) {
+        else if (option == 6)
+        {
             string memberId, isbn, date;
             cout << "Member ID: ";
             cin >> memberId;

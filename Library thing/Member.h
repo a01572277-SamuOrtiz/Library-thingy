@@ -6,10 +6,10 @@
 
 using namespace std;
 
-class Member {
+class Member
+{
 private:
-    string name;
-    string memberId;
+    string name, memberId;
     int maxBooks;
 
 public:

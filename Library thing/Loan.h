@@ -6,12 +6,10 @@
 
 using namespace std;
 
-class Loan {
+class Loan
+{
 private:
-    string isbn;       // which book
-    string memberId;   // who borrowed it
-    string borrowDate; // simple string for this example
-    string returnDate; // empty = still borrowed
+    string isbn, memberId, borrowDate, returnDate;
 
 public:
     Loan(string i, string m, string bDate);

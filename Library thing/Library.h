@@ -8,7 +8,8 @@
 
 using namespace std;
 
-class Library {
+class Library
+{
 private:
     vector<Book> books;
     vector<Member> members;
